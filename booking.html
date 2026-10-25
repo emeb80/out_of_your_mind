@@ -25,6 +25,7 @@
     </header>
 <main>
 <h1>BOKA RUM</h1>
+<!--bokningsformulär skall valideras med Javascript-->
 <form class="booking">
     <label for="room">Rum:</label>
     <select name="room" id="room" required>
@@ -61,7 +62,12 @@
       <input type="email" id="mail" name="mail">
       <label for="message">Meddelande:</label>
       <textarea name="message" id="message" rows="5" placeholder="Skriv ditt meddelande..."></textarea>
-      <button type="submit">BOKA</button>
+      <input type="checkbox" id="terms" name="terms" required>
+      <!--lägga till sida för att länka till bokningsvilkoren om det hinns med-->
+    <label for="terms">
+        Jag godkänner <a href="#booking-terms">bokningsvillkoren</a>
+    </label>
+      <button class="alert" type="submit">BOKA</button>
 </main>
     <footer>
 <img src="images/facebook.png" alt="facebook ikon">
