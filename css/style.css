@@ -130,4 +130,30 @@ nav ul {
   padding-top: 10px;
   
 }
+.intro{
+  display: flex;
+  flex-direction: column;
+  background-color: #28332f;
+  margin: 0 20px 0 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+.intro h3{
+  color: #e6dec7;
+  font-family: "google sans code", monospace ;
+  font-size: 1.1rem;
+  font-weight: 0;
+ text-align: center;
+ padding: 10px 5px 10px 5px; 
+}
+.intro p{
+  font-family: "google sans code", monospace;
+  color: #e6dec7;
+  font-weight: 100;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  padding:5px 10px 5px 10px;
+  text-align: left;
+}
 
