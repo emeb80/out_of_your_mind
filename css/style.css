@@ -143,7 +143,7 @@ nav ul {
   color: #e6dec7;
   font-family: "google sans code", monospace ;
   font-size: 1.1rem;
-  font-weight: 0;
+  font-weight: 500;
  text-align: center;
  padding: 10px 5px 10px 5px; 
 }
@@ -180,4 +180,32 @@ nav ul {
   letter-spacing: 0.1em;
   font-weight: 300;
 
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #28332f;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+}
+.facebook{
+  max-width: 40px;
+  height: auto;
+  padding-right: 10px;
+}
+.instagram{
+  max-width: 40px;
+  height: auto;
+  padding-left: 10px;
+}
+footer p{
+  font-family: "ibm plex sans", monospace;
+  color: #e6dec7;
+  padding-top: 10px;
 }
