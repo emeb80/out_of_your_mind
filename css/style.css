@@ -190,6 +190,8 @@ footer{
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 20px;
+  border-top: 2px solid #e6dec7;
+  
 }
 .icons{
   display: flex;
@@ -242,6 +244,9 @@ footer p{
   margin:5px 30px 0px 30px;
   padding-top: 5px;
 }
+.roomheading{
+  color: #e6dec7;
+}
 .room img{
   max-width: 320px;
   height: auto;
@@ -280,5 +285,5 @@ footer p{
   border: 1px solid black;
   font-weight: 600;
   padding: 3px 15px 3px 15px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
