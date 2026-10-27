@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakta oss</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Special+Elite&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <header>
         <img src="images/logo_small.png" alt="logotype out of your mind">
+        <!--Navigering till respektive sida, faq och kontakta oss ligger på samma sida men länkarna skickar till respektive sektion mha #-->
         <nav>
+            <button class="menu-toggle">☰</button>
             <ul>
                 <li><a href="home.html">Hem</a></li>
                 <li><a href="rooms.html">Våra Rum</a></li>
@@ -25,47 +30,106 @@
             </ul>
         </nav>
     </header>
-<main>
-    <h1>Mer information</h1>
-    <!--sektion med faq som skall göras interaktiv dold/visa genom javascript-->
-    <section id="faq">
-        <h2>FAQ</h2>
-        <h3>Har ni någon åldersgräns?</h3>
-        <p>Vi har åldersgräns på 18 år. Rummen innehåller material som kan upplevas som skrämmande för en yngre besökare. Inga undantag görs från åldersgränsen.</p>
-        <h3>Är rummen fysiskt krävande?</h3>
-        <p>Viss rörlighet krävs då delar av rummen har nivåskillnader och passager som kräver att man kan krypa. Till viss del kan rummen anpassas. Är ni osäkra råder vi er att kontakta oss så kan vi diskutera vad som går att lösa.</p>
-        <h3>Om vi är fler än 6 personer?</h3>
-        <p>Det går att vara fler personer i rummen, men tänk på att det kan vara trångt och svårt att hitta uppgifter åt alla personer. Är ni fler än 6 råder vi er att istället boka två rum.</p>
-        <h3>Är man instängd på riktigt?</h3>
-        <p>Nej, vi låser aldrig rummen fysiskt utan det finns alltid möjlighet att lämna om det behövs.</p>
-        <h3>Har ni skådespelare i rummen?</h3>
-        <p>Er spelledare interagerar med er på olika sätt och ibland kan fysisk närvaro i rummet förekomma</p>
-        <h3>Vad händer om vi fastnar?</h3>
-        <p>Er spelledare har ständig kontakt och kontroll, ni har tillgång till ledtrådar. Märker att ni fastnat på något så tider rinner iväg kommer ni få hjälp. </p>
-</section>
+    <main>
+        <h1>Mer information</h1>
+        <!--sektion med faq som skall göras interaktiv dold/visa genom javascript-->
 
-<!--Kontaktformulär-->
-<section id="contact">
-    <h2>Kontakta oss</h2>
-    <form class="contactform">
-        <label for="name">Namn:</label>
-        <input type="text" id="name" name="name">
-        <label for="mail">E-post:</label>
-        <input type="email" id="mail" name="mail">
-        <label for="message">Meddelande:</label>
-        <textarea name="message" id="message" rows="5" placeholder="Skriv ditt meddelande..."></textarea>
-        <button type="submit">Skicka</button>
-    </form>
-</section>
-</main>
+        <section class="faq">
+            <h2>FAQ</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Har ni någon åldersgräns?</h3>
+                    <button type="button">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Vi har åldersgräns på 18 år. Rummen innehåller material som kan upplevas som skrämmande för en
+                        yngre besökare. Inga undantag görs från åldersgränsen.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Är rummen fysiskt krävande?</h3>
+                    <button type="button">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Viss rörlighet krävs då delar av rummen har nivåskillnader och passager som kräver att man kan
+                        krypa. Till viss del kan rummen anpassas. Är ni osäkra råder vi er att kontakta oss så kan vi
+                        diskutera vad som går att lösa.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Om vi är fler än 6 personer?</h3>
+                    <button type="button">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Det går att vara fler personer i rummen, men tänk på att det kan vara trångt och svårt att hitta
+                        uppgifter åt alla personer. Är ni fler än 6 råder vi er att istället boka två rum.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Är man instängd på riktigt?</h3>
+                    <button type="button">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Nej, vi låser aldrig rummen fysiskt utan det finns alltid möjlighet att lämna om det behövs.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Har ni skådespelare i rummen?</h3>
+                    <button type="button">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Er spelledare interagerar med er på olika sätt och ibland kan fysisk närvaro i rummet förekomma.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Vad händer om vi fastnar?</h3>
+                    <button type="button">+</button>
+                </div>
+                <div class="faq-answer">
+                    <p>Er spelledare har ständig kontakt och kontroll. Ni har tillgång till ledtrådar. Om ni fastnar och
+                        tiden börjar rinna iväg kommer ni att få hjälp.</p>
+                </div>
+            </div>
+        </section>
 
 
-<footer>
-<img src="images/facebook.png" alt="facebook ikon">
-<img src="images/instagram.png" alt="instagram ikon">
-<p>outofyourmind@mail.com</p>
-<p>012-34 56 789</p>
-</footer>
+        <!--Kontaktformulär-->
+        <section class="contact">
+            <h2>Kontakta oss</h2>
+            <form class="contactform">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name">
+                <label for="mail">E-post:</label>
+                <input type="email" id="mail" name="mail">
+                <label for="message">Meddelande:</label>
+                <textarea name="message" id="message" rows="5" placeholder="Skriv ditt meddelande..."></textarea>
+                <button type="submit">Skicka</button>
+            </form>
+        </section>
+    </main>
+
+
+    <!--sidfot med kontaktuppgifter samt sociala medier länkar, desas ligger endast som bilder men kan göras till länkar på fullt fungerande sida-->
+    <footer>
+        <div class="icons">
+            <img class="facebook" src="images/facebook.png" alt="facebook ikon">
+            <img class="instagram" src="images/instagram.png" alt="instagram ikon">
+        </div>
+        <p>outofyourmind@mail.com</p>
+        <p>012-34 56 789</p>
+    </footer>
 
 </body>
 
