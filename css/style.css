@@ -287,3 +287,51 @@ footer p{
   padding: 3px 15px 3px 15px;
   margin-bottom: 50px;
 }
+
+/*faq del som skall styras med javascript, */
+
+.faq {
+    padding: 20px 10px;
+}
+
+.faq h2 {
+    margin-bottom: 15px;
+}
+
+.faq-item {
+    margin: 10px;
+    background-color: #28332f;
+    padding: 15px;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-question h3 {
+    font-family: "Special Elite", monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #e6dec7;
+    margin: 0;
+}
+
+.faq-question button {
+    background-color: #28332f;
+    border: none;
+    color: #e6dec7;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.faq-answer {
+  display:none;
+    color: #e6dec7;
+    font-family: "google sans code", monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding-top: 10px;
+}
