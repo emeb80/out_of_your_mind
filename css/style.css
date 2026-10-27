@@ -36,18 +36,20 @@ body {
 
 h1 {
   font-family: "Special Elite", monospace;
-  font-size: 2rem;text-align: center;
+  font-size: 2rem;
+  text-align: center;
   padding-top: 10px;
   padding-bottom: 5px;
   font-weight: 300;
 }
-h2{
-  font-family: special elite, monospace;
+h2 {
+  font-family:
+    special elite,
+    monospace;
   font-size: 1.5rem;
   text-align: center;
   padding-bottom: 5px;
   font-weight: 200;
-
 }
 
 .slogan {
@@ -110,28 +112,29 @@ nav ul {
   color: #e6dec7;
   font-size: 2rem;
 }
-.polaroid{
+.polaroid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:#101214;
+  background-color: #101214;
   padding: 25px 10px 20px;
   margin: 0 20px 0 20px;
 }
-.polaroid img{
+.polaroid img {
   width: 100%;
   max-width: 300px;
   height: auto;
 }
-.polaroid p{
-  font-family:special elite, monospace ;
-  color:#e6dec7;
+.polaroid p {
+  font-family:
+    special elite,
+    monospace;
+  color: #e6dec7;
   margin-top: 10px;
   font-size: 1.2rem;
   padding-top: 10px;
-  
 }
-.intro{
+.intro {
   display: flex;
   flex-direction: column;
   background-color: #28332f;
@@ -140,49 +143,47 @@ nav ul {
   margin-bottom: 15px;
   padding-bottom: 10px;
 }
-.intro h3{
+.intro h3 {
   color: #e6dec7;
-  font-family: "google sans code", monospace ;
+  font-family: "google sans code", monospace;
   font-size: 1.1rem;
   font-weight: 500;
- text-align: center;
- padding: 10px 5px 10px 5px; 
+  text-align: center;
+  padding: 10px 5px 10px 5px;
 }
-.intro p{
+.intro p {
   font-family: "google sans code", monospace;
   color: #e6dec7;
   font-weight: 100;
   font-size: 0.8rem;
   line-height: 1.4;
-  padding:5px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
   text-align: left;
 }
 
-.bookpic{
+.bookpic {
   background-color: #101214;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:0 20px 0 20px;
-
+  margin: 0 20px 0 20px;
 }
-.bookpic img{
+.bookpic img {
   max-width: 350px;
   opacity: 50%;
-  padding:15px 10px 15px 10px ; 
+  padding: 15px 10px 15px 10px;
 }
-.bookpic a{
+.bookpic a {
   position: absolute;
   text-decoration: none;
   font-family: "special elite", monospace;
-  font-size: 3.0rem;
+  font-size: 3rem;
   color: white;
   letter-spacing: 0.1em;
   font-weight: 300;
-
 }
-footer{
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,92 +192,91 @@ footer{
   padding-bottom: 15px;
   margin-top: 20px;
   border-top: 2px solid #e6dec7;
-  
 }
-.icons{
+.icons {
   display: flex;
   flex-direction: row;
 }
-.facebook{
+.facebook {
   max-width: 40px;
   height: auto;
   padding-right: 10px;
 }
-.instagram{
+.instagram {
   max-width: 40px;
   height: auto;
   padding-left: 10px;
 }
-footer p{
+footer p {
   font-family: "ibm plex sans", monospace;
   color: #e6dec7;
   padding-top: 10px;
 }
 /*styr rumssidan*/
-.greenpage{
+.greenpage {
   background-color: #28332f;
-  
 }
 
-.darkpage{
+.darkpage {
   color: #e6dec7;
   font-family: "special elite", monospace;
   text-align: center;
   padding-top: 10px;
 }
-.darkpage h1{
+.darkpage h1 {
   font-family: "Special Elite", monospace;
-  font-size: 2rem;text-align: center;
+  font-size: 2rem;
+  text-align: center;
   font-weight: 300;
 }
-.darkpage h2{
+.darkpage h2 {
   margin-bottom: 0;
 }
-.darkpage p{
+.darkpage p {
   font-size: 1.2rem;
   padding-bottom: 40px;
 }
-.room{
+.room {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #e6dec7;
-  margin:5px 30px 0px 30px;
+  margin: 5px 30px 0px 30px;
   padding-top: 5px;
 }
-.roomheading{
+.roomheading {
   color: #e6dec7;
 }
-.room img{
+.room img {
   max-width: 320px;
   height: auto;
   padding-bottom: 5px;
 }
-.room p{
+.room p {
   font-family: "google sans code", monospace;
-  padding:10px;
+  padding: 10px;
   font-size: 0.9rem;
   line-height: 1.5;
 }
-.room-info{
+.room-info {
   display: flex;
   flex-direction: row;
   color: #e6dec7;
   justify-content: space-between;
-  margin-left:35px;
-  margin-right:35px;
+  margin-left: 35px;
+  margin-right: 35px;
   margin-bottom: 10px;
 }
-.room-info p{
+.room-info p {
   font-family: "ibm plex sans", monospace;
   font-size: 1.1rem;
   font-weight: 500;
 }
-.book-room{
+.book-room {
   display: block;
   width: fit-content;
   margin: 0 auto;
-   text-decoration: none;
+  text-decoration: none;
   font-family: "ibm plex sans", monospace;
   font-size: 1.2rem;
   background-color: #7b9a89;
@@ -291,47 +291,104 @@ footer p{
 /*faq del som skall styras med javascript, */
 
 .faq {
-    padding: 20px 10px;
+  padding: 20px 10px;
 }
 
 .faq h2 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .faq-item {
-    margin: 10px;
-    background-color: #28332f;
-    padding: 15px;
+  margin: 10px;
+  background-color: #28332f;
+  padding: 15px;
 }
 
 .faq-question {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .faq-question h3 {
-    font-family: "Special Elite", monospace;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #e6dec7;
-    margin: 0;
+  font-family: "Special Elite", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #e6dec7;
+  margin: 0;
 }
 
 .faq-question button {
-    background-color: #28332f;
-    border: none;
-    color: #e6dec7;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0 5px;
+  background-color: #28332f;
+  border: none;
+  color: #e6dec7;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 5px;
 }
 
 .faq-answer {
-  display:none;
-    color: #e6dec7;
-    font-family: "google sans code", monospace;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    padding-top: 10px;
+  display: none;
+  color: #e6dec7;
+  font-family: "google sans code", monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+
+/*kontaksektionen*/
+.contact {
+  background-color: #28332f;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+  /*kontakformulär*/
+  .contactform {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+.contactform label{
+  color: #e6dec7;
+  font-family: "special elite", monospace;
+  font-size: 1.1rem;
+}
+.contactform input {
+  background-color: #e6dec7;
+  width: 100%;
+  padding: 10px;
+  background-color: #e6dec7;
+  border: 1px solid #101214;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
+}
+.contact textarea {
+  background-color: #e6dec7;
+    width: 100%;
+    padding: 10px;
+    background-color: #e6dec7;
+    border: 1px solid #101214;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1rem;
+
+}
+.contactform button{
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: "ibm plex sans", monospace;
+  font-size: 1.2rem;
+  background-color: #7b9a89;
+  color: black;
+  border-radius: 5%;
+  border: 1px solid black;
+  font-weight: 600;
+  padding: 3px 15px 3px 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+  
 }
