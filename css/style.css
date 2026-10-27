@@ -87,6 +87,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 30px;
+  border-bottom: 2px solid white;
 }
 header img {
   max-width: 170px;
@@ -208,4 +209,76 @@ footer p{
   font-family: "ibm plex sans", monospace;
   color: #e6dec7;
   padding-top: 10px;
+}
+/*styr rumssidan*/
+.greenpage{
+  background-color: #28332f;
+  
+}
+
+.darkpage{
+  color: #e6dec7;
+  font-family: "special elite", monospace;
+  text-align: center;
+  padding-top: 10px;
+}
+.darkpage h1{
+  font-family: "Special Elite", monospace;
+  font-size: 2rem;text-align: center;
+  font-weight: 300;
+}
+.darkpage h2{
+  margin-bottom: 0;
+}
+.darkpage p{
+  font-size: 1.2rem;
+  padding-bottom: 40px;
+}
+.room{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6dec7;
+  margin:5px 30px 0px 30px;
+  padding-top: 5px;
+}
+.room img{
+  max-width: 320px;
+  height: auto;
+  padding-bottom: 5px;
+}
+.room p{
+  font-family: "google sans code", monospace;
+  padding:10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.room-info{
+  display: flex;
+  flex-direction: row;
+  color: #e6dec7;
+  justify-content: space-between;
+  margin-left:35px;
+  margin-right:35px;
+  margin-bottom: 10px;
+}
+.room-info p{
+  font-family: "ibm plex sans", monospace;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.book-room{
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+   text-decoration: none;
+  font-family: "ibm plex sans", monospace;
+  font-size: 1.2rem;
+  background-color: #7b9a89;
+  color: black;
+  border-radius: 5%;
+  border: 1px solid black;
+  font-weight: 600;
+  padding: 3px 15px 3px 15px;
+  margin-bottom: 30px;
 }
