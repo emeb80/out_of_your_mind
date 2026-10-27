@@ -12,10 +12,12 @@
 </head>
 
 <body>
-    <img src="images/door_small.jpg" alt="metalldörrar i närbild">
-    <header>
+    
+     <header class="bookpage">
         <img src="images/logo_small.png" alt="logotype out of your mind">
+        <!--Navigering till respektive sida, faq och kontakta oss ligger på samma sida men länkarna skickar till respektive sektion mha #-->
         <nav>
+            <button class="menu-toggle">☰</button>
             <ul>
                 <li><a href="home.html">Hem</a></li>
                 <li><a href="rooms.html">Våra Rum</a></li>
@@ -27,7 +29,8 @@
         </nav>
     </header>
 <main>
-<h1>BOKA RUM</h1>
+    <img class="door"src="images/door_big.jpg" alt="metalldörrar i närbild">
+<h1 class="bookingheading">BOKA RUM</h1>
 <!--bokningsformulär skall valideras med Javascript-->
 <form class="booking">
     <label for="room">Rum:</label>
@@ -63,21 +66,26 @@
       <input type="text" id="number" name="number">
       <label for="mail">E-post:</label>
       <input type="email" id="mail" name="mail">
-      <label for="message">Meddelande:</label>
-      <textarea name="message" id="message" rows="5" placeholder="Skriv ditt meddelande..."></textarea>
+      <label class="message-label" for="message">Meddelande:</label>
+      <textarea name="message" id="message" rows="7" placeholder="Skriv ditt meddelande..."></textarea>
+    <div class="terms">
       <input type="checkbox" id="terms" name="terms" required>
       <!--lägga till sida för att länka till bokningsvilkoren om det hinns med-->
-    <label for="terms">
+    <label class="terms-label" for="terms">
         Jag godkänner <a href="#booking-terms">bokningsvillkoren</a>
     </label>
+    </div>
       <button class="alert" type="submit">BOKA</button>
+      </form>
 </main>
-    <footer>
-<img src="images/facebook.png" alt="facebook ikon">
-<img src="images/instagram.png" alt="instagram ikon">
-<p>outofyourmind@mail.com</p>
-<p>012-34 56 789</p>
-</footer>
+    <footer class="bookpage">
+        <div class="icons">
+            <img class="facebook" src="images/facebook.png" alt="facebook ikon">
+            <img class="instagram" src="images/instagram.png" alt="instagram ikon">
+        </div>
+        <p>outofyourmind@mail.com</p>
+        <p>012-34 56 789</p>
+    </footer>
 
 </body>
 
