@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boka rum</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Special+Elite&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    
-     <header class="bookpage">
+
+    <header class="bookpage">
         <img src="images/logo_small.png" alt="logotype out of your mind">
         <!--Navigering till respektive sida, faq och kontakta oss ligger på samma sida men länkarna skickar till respektive sektion mha #-->
         <nav>
@@ -27,56 +29,93 @@
             </ul>
         </nav>
     </header>
-<main>
-    <img class="door" src="images/door_big.jpg" alt="metalldörrar i närbild">
-<h1 class="bookingheading">BOKA RUM</h1>
-<!--bokningsformulär skall valideras med Javascript-->
-<form class="booking">
-    <label for="room">Rum:</label>
-    <select name="room" id="room" required>
-        <option value="" selected disabled>Välj ett rum</option>
-        <option value="inskrivningen">Inskrivningen</option>
-        <option value="behandlingen">Behandlingen</option>
-        <option value="patienten">Patienten</option>
-    </select>
-    <label for="date">Välj datum:</label>
-    <input type="date" id="date" name="date" required>
-    <label for="time">Tid:</label>
-    <select name="time" id="time" required>
-        <option value="" selected disabled>Tid</option>
-        <option value="17:00">17:00</option>
-        <option value="18:00">18:00</option>
-        <option value="19:00">19:00</option>
-        <option value="20:00">20:00</option>
-        <option value="21:00">21:00</option>
-        </select>
-      <label for="persons">Antal:</label>
-      <select name="persons" id="persons">
-        <option value="" selected disabled>Antal personer</option>
-        <option value="2">2</option>
-        <option value="2">3</option>
-        <option value="2">4</option>
-        <option value="2">5</option>
-        <option value="2">6</option>
-      </select>  
-      <label for="name">Namn:</label>
-      <input type="text" id="name" name="name">
-      <label for="number">Tele:</label>
-      <input type="text" id="number" name="number">
-      <label for="mail">E-post:</label>
-      <input type="email" id="mail" name="mail">
-      <label class="message-label" for="message">Meddelande:</label>
-      <textarea name="message" id="message" rows="7" placeholder="Skriv ditt meddelande..."></textarea>
-    <div class="terms">
-      <input type="checkbox" id="terms" name="terms" required>
-      <!--lägga till sida för att länka till bokningsvilkoren om det hinns med-->
-    <label class="terms-label" for="terms">
-        Jag godkänner <a href="#booking-terms">bokningsvillkoren</a>
-    </label>
-    </div>
-      <button class="alert" type="submit">BOKA</button>
-      </form>
-</main>
+    <main>
+        <img class="door" src="images/door_big.jpg" alt="metalldörrar i närbild">
+        <h1 class="bookingheading">BOKA RUM</h1>
+        <div class="terms-form">
+
+            <section class="bookingterms" id="booking-terms">
+
+                <h2>Bokningsvilkor</h2>
+                <h3>Bekräftelse</h3>
+                <p>Bokning görs via vårt bokningsformulär på hemsidan. När du skickat in en bokningsförfrågan kontaktar
+                    vi dig för att bekräfta tid och datum. Bokningen är giltig först när du fått en bokningsbekräftelse
+                    från oss.</p>
+
+                <h3>Avbokning och ändring</h3>
+                <p>Om du behöver avboka eller ändra din bokning ber vi dig att kontakta oss så snart som möjligt. Ange
+                    namn och bokningsdatum när du kontaktar oss.</p>
+
+                <h3>Betalning</h3>
+                <p>Ingen betalning sker via hemsidan. Information om betalning och eventuella avgifter lämnas i samband
+                    med bokningsbekräftelsen.</p>
+
+                <h3>Ankomst</h3>
+                <p>Vi rekommenderar att ni kommer cirka 10–15 minuter före bokad tid för att få information inför ert
+                    äventyr. Vid försening ber vi er att kontakta oss så snart som möjligt.</p>
+
+                <h3>Deltagande och säkerhet</h3>
+                <p>Alla deltagare ska följa personalens instruktioner och säkerhetsregler. Escape room-rummen är
+                    utformade för att lösas med samarbete och problemlösning. Utrustning och inredning får inte skadas
+                    eller användas på ett sätt som kan innebära risk för deltagarna.</p>
+
+                <h3>Personuppgifter</h3>
+                <p>
+                    De uppgifter du lämnar i samband med bokningen används för att hantera din förfrågan och kontakta
+                    dig angående bokningen.
+                Genom att skicka in en bokningsförfrågan godkänner du att vi kontaktar dig för att hantera din bokning.</p>
+            </section>
+
+
+            <!--bokningsformulär skall valideras med Javascript-->
+            <form class="booking">
+                <label for="room">Rum:</label>
+                <select name="room" id="room" required>
+                    <option value="" selected disabled>Välj ett rum</option>
+                    <option value="inskrivningen">Inskrivningen</option>
+                    <option value="behandlingen">Behandlingen</option>
+                    <option value="patienten">Patienten</option>
+                </select>
+                <label for="date">Välj datum:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Tid:</label>
+                <select name="time" id="time" required>
+                    <option value="" selected disabled>Tid</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                </select>
+                <label for="persons">Antal:</label>
+                <select name="persons" id="persons">
+                    <option value="" selected disabled>Antal personer</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name">
+                <label for="number">Tele:</label>
+                <input type="text" id="number" name="number">
+                <label for="mail">E-post:</label>
+                <input type="email" id="mail" name="mail">
+                <label class="message-label" for="message">Meddelande:</label>
+                <textarea name="message" id="message" rows="7" placeholder="Skriv ditt meddelande..."></textarea>
+                <button class="terms-toggle" type="button">Läs bokningsvilkoren ▼ </button>
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <!--lägga till sida för att länka till bokningsvilkoren om det hinns med-->
+                    <label class="terms-label" for="terms">
+                        Jag godkänner bokningsvillkoren
+                    </label>
+                </div>
+                <button class="alert" type="submit">BOKA</button>
+            </form>
+        </div>
+    </main>
     <footer class="bookpage">
         <div class="icons">
             <img class="facebook" src="images/facebook.png" alt="facebook ikon">
