@@ -122,9 +122,11 @@ nav ul {
   margin: 0 20px 0 20px;
 }
 .polaroid img {
+  display: block;
   width: 100%;
   max-width: 800px;
   height: auto;
+  min-width: 0;
 }
 .polaroid p {
   font-family:
@@ -169,7 +171,8 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 20px 0 20px;
+  width: fit-content;
+  margin: 20px auto;
 }
 .bookpic img {
   max-width: 350px;
@@ -495,41 +498,47 @@ footer p {
     align-items: baseline;
     padding: 20px 0;
   }
-  .vincent h1,h2{
-    font-size: clamp(2.5rem, 3vw, 3.0rem);
+  .vincent h1,
+  h2 {
+    font-size: clamp(2.5rem, 3vw, 3rem);
   }
-
 }
 @media (min-width: 900px) {
-    .desktop-intro {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 30px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
+  .desktop-intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
-    .polaroid {
-        flex: 0 1 40%;
-        min-width: 0;
-        margin: 0;
-        max-height: 500px;
-    }
+  .polaroid {
+    flex: 0 1 40%;
+    min-width: 0;
+    width: 40%;
+    margin: 0;
+    max-height: 500px;
+  }
+  .polaroid img {
+    max-width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+  }
 
-    .intro {
-        flex: 3;
-        min-width: 0;
-        max-width: 800px;
-        margin: 0;
-        max-height: 500px;
-        justify-content: space-between;
-        align-self: stretch;
-    }
-    .intro h3{
-      font-size: clamp(1.2rem, 2vw, 2rem);
-    }
-    .intro p{
-      font-size: clamp(0.7rem, 1.0vw, 1.0rem);
-    }
+  .intro {
+    flex: 3;
+    min-width: 0;
+    max-width: 800px;
+    margin: 0;
+    max-height: 500px;
+    justify-content: space-between;
+    align-self: stretch;
+  }
+  .intro h3 {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+  }
+  .intro p {
+    font-size: clamp(0.7rem, 1vw, 1rem);
+  }
 }
