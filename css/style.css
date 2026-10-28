@@ -24,7 +24,7 @@
 .logo {
   display: block;
   width: 80%;
-  max-width:500px;
+  max-width: 500px;
   max-height: 50%;
   margin: 0 auto;
   position: relative;
@@ -118,12 +118,12 @@ nav ul {
   flex-direction: column;
   align-items: center;
   background-color: #101214;
-  padding: 25px 10px 20px;
+  padding: 10px 10px 20px;
   margin: 0 20px 0 20px;
 }
 .polaroid img {
   width: 100%;
-  max-width: 300px;
+  max-width: 800px;
   height: auto;
 }
 .polaroid p {
@@ -160,6 +160,7 @@ nav ul {
   line-height: 1.4;
   padding: 5px 10px 5px 10px;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .bookpic {
@@ -345,13 +346,13 @@ footer p {
   margin-right: 20px;
 }
 
-  /*kontakformulär*/
-  .contactform {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-.contactform label{
+/*kontakformulär*/
+.contactform {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.contactform label {
   color: #e6dec7;
   font-family: "special elite", monospace;
   font-size: 1.1rem;
@@ -367,15 +368,14 @@ footer p {
 }
 .contact textarea {
   background-color: #e6dec7;
-    width: 100%;
-    padding: 10px;
-    background-color: #e6dec7;
-    border: 1px solid #101214;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 1rem;
-
+  width: 100%;
+  padding: 10px;
+  background-color: #e6dec7;
+  border: 1px solid #101214;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
 }
-.contactform button{
+.contactform button {
   display: block;
   width: fit-content;
   margin: 0 auto;
@@ -390,8 +390,6 @@ footer p {
   padding: 3px 15px 3px 15px;
   margin-bottom: 10px;
   margin-top: 10px;
-  
-  
 }
 /*bilden som ligger som bakgrund på bokningssidan*/
 .door {
@@ -404,80 +402,78 @@ footer p {
   left: 0;
 }
 
-.bookpage{
+.bookpage {
   background-color: transparent;
 }
-.bookingheading{
+.bookingheading {
   color: #e6dec7;
-  padding-top:20px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 /*formulär för bokning*/
-.booking{
+.booking {
   display: grid;
   grid-template-columns: auto 1fr;
-gap: 10px;
-padding: 0 10px 0 10px;
+  gap: 10px;
+  padding: 0 10px 0 10px;
 }
-.booking label{
+.booking label {
   font-family: "special elite", monospace;
   font-size: 1.2rem;
   color: #e6dec7;
   padding-top: 10px;
 }
 
-.booking input{
+.booking input {
   background-color: #e6dec7;
   font-family: "google sans code", monospace;
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
-.booking select{
+.booking select {
   background-color: #e6dec7;
 }
 .booking .message-label {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .booking textarea {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
-.booking textarea{
+.booking textarea {
   background-color: #e6dec7;
 }
 .terms {
-    grid-column: 1 / -1;
-    font-size: 1.0rem;
-    justify-self: center;
+  grid-column: 1 / -1;
+  font-size: 1rem;
+  justify-self: center;
 }
 
 .terms a {
-    color: #28332f;
-    background-color: #e6dec7;
-    text-decoration: none;
-    padding: 2px 5px;
-    font-weight: bold;
-    border-radius: 3px;
-  
+  color: #28332f;
+  background-color: #e6dec7;
+  text-decoration: none;
+  padding: 2px 5px;
+  font-weight: bold;
+  border-radius: 3px;
 }
-.terms label{
+.terms label {
   font-size: 0.78rem;
 }
-.alert{
+.alert {
   grid-column: 1/-1;
-justify-self: center;
+  justify-self: center;
   font-family: "google sans code", monospace;
   font-size: 1.5rem;
   font-weight: 500;
-  color:#e6dec7;
+  color: #e6dec7;
   background-color: #8a2d2d;
   border: 5px solid #101214;
   border-radius: 5%;
-  padding:3px 25px 3px 25px;
-  margin:7px 0 5px 0;
+  padding: 3px 25px 3px 25px;
+  margin: 7px 0 5px 0;
 }
 
 /*desktop design*/
-
 
 @media (min-width: 559px) {
   /*styr så att loggan inte krockar med texten under*/
@@ -488,20 +484,52 @@ justify-self: center;
 
   .enter-button {
     font-size: 1.7rem;
-    margin-top:20px
-    
+    margin-top: 20px;
   }
 }
-@media (min-width:800px)
 
-{
-  .vincent{
+@media (min-width: 900px) {
+  .vincent {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: baseline;
+    padding: 20px 0;
   }
   .vincent h1,h2{
-    font-size: 2.3rem;
+    font-size: clamp(2.5rem, 3vw, 3.0rem);
   }
+
+}
+@media (min-width: 900px) {
+    .desktop-intro {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .polaroid {
+        flex: 0 1 40%;
+        min-width: 0;
+        margin: 0;
+        max-height: 500px;
+    }
+
+    .intro {
+        flex: 3;
+        min-width: 0;
+        max-width: 800px;
+        margin: 0;
+        max-height: 500px;
+        justify-content: space-between;
+        align-self: stretch;
+    }
+    .intro h3{
+      font-size: clamp(1.2rem, 2vw, 2rem);
+    }
+    .intro p{
+      font-size: clamp(0.7rem, 1.0vw, 1.0rem);
+    }
 }
