@@ -33,8 +33,9 @@
         <img class="door" src="images/door_big.jpg" alt="metalldörrar i närbild">
         <h1 class="bookingheading">BOKA RUM</h1>
         <div class="terms-form">
+            
 
-            <section class="bookingterms" id="booking-terms">
+            <section class="bookingterms" id="bookingterms">
 
                 <h2>Bokningsvilkor</h2>
                 <h3>Bekräftelse</h3>
@@ -76,7 +77,7 @@
                     <option value="behandlingen">Behandlingen</option>
                     <option value="patienten">Patienten</option>
                 </select>
-                <label for="date">Välj datum:</label>
+                <label for="date">Datum:</label>
                 <input type="date" id="date" name="date" required>
                 <label for="time">Tid:</label>
                 <select name="time" id="time" required>
@@ -89,7 +90,7 @@
                 </select>
                 <label for="persons">Antal:</label>
                 <select name="persons" id="persons">
-                    <option value="" selected disabled>Antal personer</option>
+                    <option value="" selected disabled>Personer</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -104,15 +105,18 @@
                 <input type="email" id="mail" name="mail">
                 <label class="message-label" for="message">Meddelande:</label>
                 <textarea name="message" id="message" rows="7" placeholder="Skriv ditt meddelande..."></textarea>
-                <button class="terms-toggle" type="button">Läs bokningsvilkoren ▼ </button>
+                
                 <div class="terms">
                     <input type="checkbox" id="terms" name="terms" required>
                     <!--lägga till sida för att länka till bokningsvilkoren om det hinns med-->
                     <label class="terms-label" for="terms">
-                        Jag godkänner bokningsvillkoren
+                        Jag godkänner bokningsvillkor
                     </label>
+                    
                 </div>
+                <button class="terms-toggle" type="button">Läs bokningsvilkoren ▼ </button>
                 <button class="alert" type="submit">BOKA</button>
+                
             </form>
         </div>
     </main>
