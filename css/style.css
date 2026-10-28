@@ -90,7 +90,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 30px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #e6dec7;
 }
 header img {
   max-width: 170px;
@@ -462,21 +462,19 @@ footer p {
 .terms label {
   font-size: 0.78rem;
 }
-.terms-toggle{
-   grid-column: 1 / -1;
-    justify-self: center;
+.terms-toggle {
+  grid-column: 1 / -1;
+  justify-self: center;
   font-family: "special elite", monospace;
-  font-size: 1.0rem;
+  font-size: 1rem;
   border: none;
   background-color: #e6dec7;
   color: #101214;
 }
 
-.bookingterms{
+.bookingterms {
   background-color: #e6dec7;
-  font-family:"ibm plex sans", monospace;
-  
-  
+  font-family: "ibm plex sans", monospace;
 }
 
 .alert {
@@ -490,7 +488,35 @@ footer p {
   border: 5px solid #101214;
   border-radius: 5%;
   padding: 3px 25px 3px 25px;
-  margin: 7px 0 5px 0;
+  margin: 15px 0 0 0;
+}
+
+.terms-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 10px 20px 60px 20px;
+}
+
+.bookingterms {
+  display: none;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+
+.booking label {
+  font-size: 1rem;
+}
+.booking select {
+  width: 150px;
+  font-size: 1.1rem;
+}
+.booking #date {
+  width: 150px;
+  font-size: 1.1rem;
 }
 
 /*desktop design*/
@@ -558,170 +584,160 @@ footer p {
   .intro p {
     font-size: clamp(0.7rem, 1vw, 1rem);
   }
-.bookpic img{
-  display: none;
-}
-.bookpic{
-  margin-top:50px;
-  margin-bottom: 50px;
-}
-.bookpic a{
-  padding:10px 15px 5px 15px;
-  
-  background-color: #8a2d2d;
-}
- header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-header img {
-  position: static;
-  grid-column: auto;
-  justify-self: auto;
-  max-width: 200px;
-  margin-left: 120px;
-}
+  .bookpic img {
+    display: none;
+  }
+  .bookpic {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .bookpic a {
+    padding: 10px 15px 5px 15px;
 
-header nav {
-  flex: 1;
-  margin-left: 60px;
-  padding:20px;
-}
+    background-color: #8a2d2d;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  header img {
+    position: static;
+    grid-column: auto;
+    justify-self: auto;
+    max-width: 200px;
+    margin-left: 120px;
+  }
 
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 100px;
-  list-style-type: none;
-  margin-right: 120px;
-}
- nav ul li a{
-  font-family: "special elite", monospace;
-  text-decoration: none;
-  color: #e6dec7;
-  font-size: 1.5rem;
- }
-.menu-toggle {
-  display: none;
-}
+  header nav {
+    flex: 1;
+    margin-left: 60px;
+    padding: 20px;
+  }
 
-footer{
-  
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-.room{
-  display: flex;
-  flex-direction: row;
-  max-width: 1200px;
-  height: auto;
-  min-height: 300px;
-  margin: auto;
-  padding-left: 5px;
-}
-.darkpage h1{
-  font-size: clamp(2.5rem, 3vw, 3rem);
-}
-.roomheading{
-  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
-  padding-top: 20px;
-}
-.room p {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
+    list-style-type: none;
+    margin-right: 120px;
+  }
+  nav ul li a {
+    font-family: "special elite", monospace;
+    text-decoration: none;
+    color: #e6dec7;
+    font-size: 1.5rem;
+  }
+  .menu-toggle {
+    display: none;
+  }
+
+  footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .room {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    height: auto;
+    min-height: 300px;
+    margin: auto;
+    padding-left: 5px;
+  }
+  .darkpage h1 {
+    font-size: clamp(2.5rem, 3vw, 3rem);
+  }
+  .roomheading {
+    font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+    padding-top: 20px;
+  }
+  .room p {
     font-size: clamp(0.9rem, 1.1vw, 1.2rem);
     padding: 0 50px 0 50px;
   }
   .room img {
-  max-width: 500px;
-  height: auto;
-  padding-bottom: 5px;
-}
+    max-width: 500px;
+    height: auto;
+    padding-bottom: 5px;
+  }
 
-.room-info {
-  display: flex;
-  flex-direction: row;
-  color: #e6dec7;
-  justify-content: flex-end;
-  gap:100px;
-  margin: 0 auto;
-  width: fit-content;
-  margin-bottom: 10px;
-}
+  .room-info {
+    display: flex;
+    flex-direction: row;
+    color: #e6dec7;
+    justify-content: flex-end;
+    gap: 100px;
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 10px;
+  }
 
-.room-info p {
-  font-family: "ibm plex sans", monospace;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.infopage {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
+  .room-info p {
+    font-family: "ibm plex sans", monospace;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .infopage {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
 
-.infopage > .faq {
-  flex: 1.1;
-  min-width: 0;
-}
+  .infopage > .faq {
+    flex: 1.1;
+    min-width: 0;
+  }
 
-.infopage > .contact-area {
-  flex: 0.9;
-  min-width: 0;
-}
-.faq-area h2,
-.contact-area h2 {
-  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
-  margin-top: 0;
-  padding-top: 30px;
-}
-.contact-area h2 {
-  margin-bottom: 15px;
-}
-.faq,
-.contact-area {
-  padding: 20px 10px;
-}
-.faq-question h3{
-  font-size: 1.3rem;
-}
-.contactform label{
-  font-size: 1.2rem;
-}
-h1{
-  font-size: clamp(2.5rem, 3vw, 3rem);
-}
-.terms-form {
+  .infopage > .contact-area {
+    flex: 0.9;
+    min-width: 0;
+  }
+  .faq-area h2,
+  .contact-area h2 {
+    font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+    margin-top: 0;
+    padding-top: 30px;
+  }
+  .contact-area h2 {
+    margin-bottom: 15px;
+  }
+  .faq,
+  .contact-area {
+    padding: 20px 10px;
+  }
+  .faq-question h3 {
+    font-size: 1.3rem;
+  }
+  .contactform label {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 3vw, 3rem);
+  }
+  .terms-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    margin:10px 20px 60px 20px;
-}
+    margin: 10px 20px 60px 20px;
+  }
 
-.bookingterms {
-  display: none;
+  .bookingterms {
+    display: none;
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
     padding: 30px 20px;
-}
+  }
 
-.booking label{
-  font-size: 1.5rem;
+  .booking label {
+    font-size: 1.5rem;
+  }
 }
-.booking select{
-  width: 150px;
-  font-size: 1.1rem;
-}
-.booking #date {
-  width:150px;
-  font-size: 1.1rem;
-}
-}
-
