@@ -593,6 +593,13 @@ nav ul {
 .menu-toggle {
   display: none;
 }
+
+footer{
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 .room{
   display: flex;
   flex-direction: row;
@@ -635,5 +642,43 @@ nav ul {
   font-size: 1.5rem;
   font-weight: 500;
 }
+.infopage {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.infopage > .faq {
+  flex: 1.1;
+  min-width: 0;
+}
+
+.infopage > .contact-area {
+  flex: 0.9;
+  min-width: 0;
+}
+.faq-area h2,
+.contact-area h2 {
+  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+  margin-top: 0;
+  padding-top: 30px;
+}
+.contact-area h2 {
+  margin-bottom: 15px;
+}
+.faq,
+.contact-area {
+  padding: 20px 10px;
+}
+.faq-question h3{
+  font-size: 1.3rem;
+}
+.contactform label{
+  font-size: 1.2rem;
+}
+h1{
+  font-size: clamp(2.5rem, 3vw, 3rem);
+}
+
 }
 

@@ -33,9 +33,9 @@
     <main>
         <h1>Mer information</h1>
         <!--sektion med faq som skall göras interaktiv dold/visa genom javascript-->
-
-        <section class="faq">
-            <h2>FAQ</h2>
+<div class="infopage">
+        <section class="faq" id="faq">
+            <div class="faq-area"><h2>FAQ</h2>
 
             <div class="faq-item">
                 <div class="faq-question">
@@ -102,9 +102,10 @@
                         tiden börjar rinna iväg kommer ni att få hjälp.</p>
                 </div>
             </div>
+            </div>
         </section>
 
-<h2>Kontakta oss</h2>
+<div class="contact-area"><h2>Kontakta oss</h2>
         <!--Kontaktformulär-->
         <section class="contact">
             
@@ -114,10 +115,12 @@
                 <label for="mail">E-post:</label>
                 <input type="email" id="mail" name="mail" placeholder="example@mail.com">
                 <label for="message">Meddelande:</label>
-                <textarea name="message" id="message" rows="10" placeholder="Skriv ditt meddelande..."></textarea>
+                <textarea name="message" id="message" rows="" placeholder="Skriv ditt meddelande..."></textarea>
                 <button type="submit">Skicka</button>
             </form>
         </section>
+        </div>
+        </div>
     </main>
 
 
