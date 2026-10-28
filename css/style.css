@@ -492,3 +492,16 @@ justify-self: center;
     
   }
 }
+@media (min-width:800px)
+
+{
+  .vincent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .vincent h1,h2{
+    font-size: 2.3rem;
+  }
+}
