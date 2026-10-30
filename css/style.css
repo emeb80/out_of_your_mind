@@ -427,6 +427,20 @@ footer p {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+/*felmeddelande till formulär*/
+.error{
+  color: white;
+  font-family: "ibm plex sans",monospace;
+}
+/*meddelande som visas när formuläret är korrekt validerat*/
+.success-message{
+  color: white;
+  font-family: "ibm plex sans", monospace;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
 /*bilden som ligger som bakgrund på bokningssidan*/
 .door {
   position: fixed;
