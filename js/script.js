@@ -9,7 +9,7 @@ menuButton.addEventListener("click", function(){
 menu.classList.toggle("open");
 });
 
-//KONTAKFORRMULÄR
+//KONTAKFORMULÄR
 
 //Hämtar kontaktformulär//
 const contactForm = document.querySelector(".contactform");
@@ -24,6 +24,10 @@ const messageError = document.querySelector("#message-error");
 //Funktion som kontrollerar formulär när det skickas
 contactForm.addEventListener("submit", function(event){
 event.preventDefault();
+nameError.textContent = "";
+emailError.textContent = "";
+messageError.textContent = "";   
+
 
 //Hämtar värden från formuläret och kontrollerr mellanslag
 const name= document.querySelector("#name").value.trim();
