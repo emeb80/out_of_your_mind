@@ -30,11 +30,11 @@
   position: relative;
   top: 25vh;
 }
-
+/*bakgrundsförg body*/
 body {
   background-color: #e6dec7;
 }
-
+/* gemensam stil för huvudrubriker och underrubriker */
 h1 {
   font-family: "Special Elite", monospace;
   font-size: 2rem;
@@ -52,7 +52,7 @@ h2 {
   padding-bottom: 5px;
   font-weight: 200;
 }
-
+/*slogan som ligger på landingpage*/
 .slogan {
   color: white;
   font-weight: 400;
@@ -63,7 +63,7 @@ h2 {
   left: 0;
   width: 100%;
 }
-
+/*knapp mitt på sidan*/
 .button-container {
   display: flex;
   justify-content: center;
@@ -84,6 +84,7 @@ h2 {
   text-decoration: none;
   left: 50%;
 }
+/*header - logtyp+navigering*/
 header {
   display: grid;
   background-color: #28332f;
@@ -100,12 +101,37 @@ header img {
   justify-self: center;
 }
 nav {
+  position: relative;
   grid-column: 3;
   justify-self: end;
 }
+/*styling av navigeringslistan i mobilläge samt att den blir dold*/
 nav ul {
   display: none;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  background-color: #28332f;
+  border-top: 1px solid #e6dec7;
 }
+nav ul.open{
+  display: block;
+}
+nav li{
+  margin-bottom: 5px;
+}
+nav a{
+  display: block;
+  font-family: "special elite", monospace;
+  color: #e6dec7;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/*utseende på kapp för mobilmeny*/
 .menu-toggle {
   align-self: start;
   background: none;
@@ -113,6 +139,7 @@ nav ul {
   color: #e6dec7;
   font-size: 2rem;
 }
+/*bild, bakgrund och bildtext som foto*/
 .polaroid {
   display: flex;
   flex-direction: column;
@@ -128,6 +155,7 @@ nav ul {
   height: auto;
   min-width: 0;
 }
+/*bildtext polaroidbild startsida*/
 .polaroid p {
   font-family:
     special elite,
@@ -137,6 +165,7 @@ nav ul {
   font-size: 1.2rem;
   padding-top: 10px;
 }
+/*introtext startsida*/
 .intro {
   display: flex;
   flex-direction: column;
@@ -164,7 +193,7 @@ nav ul {
   text-align: left;
   margin-bottom: 20px;
 }
-
+/*bild med textlänk för navigering till bokningssida*/
 .bookpic {
   background-color: #101214;
   position: relative;
@@ -188,6 +217,7 @@ nav ul {
   letter-spacing: 0.1em;
   font-weight: 300;
 }
+/*footer med kontaktinfo och SoMe ikoner*/
 footer {
   display: flex;
   flex-direction: column;
@@ -217,7 +247,7 @@ footer p {
   color: #e6dec7;
   padding-top: 10px;
 }
-/*styr rumssidan*/
+/*styr rumssidan - färg och text rubrik/underubrik*/
 .greenpage {
   background-color: #28332f;
 }
@@ -241,6 +271,7 @@ footer p {
   font-size: 1.2rem;
   padding-bottom: 40px;
 }
+/*korten som presenterar rummen*/
 .room {
   display: flex;
   flex-direction: column;
@@ -263,6 +294,7 @@ footer p {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+/*info om rummens egenskaper*/
 .room-info {
   display: flex;
   flex-direction: row;
@@ -277,6 +309,7 @@ footer p {
   font-size: 1.1rem;
   font-weight: 500;
 }
+/*knapp för bokning*/
 .book-room {
   display: block;
   width: fit-content;
@@ -294,7 +327,7 @@ footer p {
 }
 
 /*faq del som skall styras med javascript, */
-
+/*layout + utseende för faq-delen*/
 .faq {
   padding: 20px 10px;
 }
@@ -333,7 +366,6 @@ footer p {
 }
 
 .faq-answer {
-  display: none;
   color: #e6dec7;
   font-family: "google sans code", monospace;
   font-size: 0.9rem;
@@ -349,7 +381,7 @@ footer p {
   margin-right: 20px;
 }
 
-/*kontakformulär*/
+/*kontakformulär rubriker, inmatningsfält*/
 .contactform {
   display: flex;
   flex-direction: column;
@@ -378,6 +410,7 @@ footer p {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1rem;
 }
+/*knapp för skicka formuläret*/
 .contactform button {
   display: block;
   width: fit-content;
@@ -413,7 +446,7 @@ footer p {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-/*formulär för bokning*/
+/*formulär för bokning fält och rubriker, flervalsboxar*/
 .booking {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -445,6 +478,7 @@ footer p {
 .booking textarea {
   background-color: #e6dec7;
 }
+/*bokningsvilkor, knapp som öppnar vilkor - varför a?*/
 .terms {
   grid-column: 1 / -1;
   font-size: 1rem;
@@ -476,7 +510,7 @@ footer p {
   background-color: #e6dec7;
   font-family: "ibm plex sans", monospace;
 }
-
+/*knapp för bokning*/
 .alert {
   grid-column: 1/-1;
   justify-self: center;
@@ -490,7 +524,7 @@ footer p {
   padding: 3px 25px 3px 25px;
   margin: 15px 0 0 0;
 }
-
+/*styr delen med godkänna vilkor och öppna vilkor*/
 .terms-form {
   display: flex;
   flex-direction: column;
@@ -507,6 +541,7 @@ footer p {
   padding: 30px 20px;
 }
 
+/*storlek på fält och selectboxar*/
 .booking label {
   font-size: 1rem;
 }
@@ -522,12 +557,12 @@ footer p {
 /*desktop design*/
 
 @media (min-width: 559px) {
-  /*styr så att loggan inte krockar med texten under*/
+  /*styr så att loggan inte krockar med texten under på större skärmar*/
   .slogan {
     font-size: 2.5rem;
     padding-top: 50px;
   }
-
+/*styr storlek och avstånd för knappen på startsidan*/
   .enter-button {
     font-size: 1.7rem;
     margin-top: 20px;
@@ -535,18 +570,21 @@ footer p {
 }
 
 @media (min-width: 900px) {
+  /*sätter de två rubrikerna h1 och h2 bredvid varandra vid desktop + styr storlek*/
   .vincent {
     display: flex;
     justify-content: center;
     align-items: baseline;
     padding: 20px 0;
   }
+  
   .vincent h1,
   .vincent h2 {
     font-size: clamp(2.5rem, 3vw, 3rem);
   }
 }
 @media (min-width: 900px) {
+  /*placering av bild och introtext bredvid varandra*/
   .desktop-intro {
     display: flex;
     align-items: flex-start;
@@ -555,7 +593,7 @@ footer p {
     margin: 0 auto;
     padding: 0 20px;
   }
-
+/*anpassar bilden till behållaren*/
   .polaroid {
     flex: 0 1 40%;
     min-width: 0;
@@ -568,7 +606,7 @@ footer p {
     max-height: 450px;
     object-fit: contain;
   }
-
+/*itroduktionstextens bredd och placering*/
   .intro {
     flex: 3;
     min-width: 0;
@@ -584,9 +622,11 @@ footer p {
   .intro p {
     font-size: clamp(0.7rem, 1vw, 1rem);
   }
+  /*döljer bild när desktop*/
   .bookpic img {
     display: none;
   }
+  /*styling runt bokningslänken*/
   .bookpic {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -596,6 +636,7 @@ footer p {
 
     background-color: #8a2d2d;
   }
+  /*logotyp och navigering samma rad samt visas*/
   header {
     display: flex;
     flex-direction: row;
@@ -612,13 +653,13 @@ footer p {
     max-width: 200px;
     margin-left: 120px;
   }
-
+/*navigeringens utrymme*/
   header nav {
     flex: 1;
     margin-left: 60px;
     padding: 20px;
   }
-
+/*menykategoriernas placering*/
   nav ul {
     display: flex;
     justify-content: flex-end;
@@ -627,21 +668,24 @@ footer p {
     list-style-type: none;
     margin-right: 120px;
   }
+  /*länkutseende*/
   nav ul li a {
     font-family: "special elite", monospace;
     text-decoration: none;
     color: #e6dec7;
     font-size: 1.5rem;
   }
+  /*dölj meny för mobil*/
   .menu-toggle {
     display: none;
   }
-
+/*sidfotens layout*/
   footer {
     left: 0;
     bottom: 0;
     width: 100%;
   }
+  /*rummens innehåll - layout ändras*/
   .room {
     display: flex;
     flex-direction: row;
@@ -651,6 +695,7 @@ footer p {
     margin: auto;
     padding-left: 5px;
   }
+  /*clamp för att anpassa till resoonsivitet*/
   .darkpage h1 {
     font-size: clamp(2.5rem, 3vw, 3rem);
   }
@@ -667,7 +712,7 @@ footer p {
     height: auto;
     padding-bottom: 5px;
   }
-
+/*rummens informations placering, storlek, layout*/
   .room-info {
     display: flex;
     flex-direction: row;
@@ -694,7 +739,7 @@ footer p {
     flex: 1.1;
     min-width: 0;
   }
-
+/*placerar faq och kontakt bredvid varandra + styling*/
   .infopage > .contact-area {
     flex: 0.9;
     min-width: 0;
@@ -721,6 +766,7 @@ footer p {
   h1 {
     font-size: clamp(2.5rem, 3vw, 3rem);
   }
+  /*placering i kolumn*/
   .terms-form {
     display: flex;
     flex-direction: column;
@@ -728,7 +774,7 @@ footer p {
     align-items: center;
     margin: 10px 20px 60px 20px;
   }
-
+/*bredd, avstånd, visning vilkor*/
   .bookingterms {
     display: none;
     width: 100%;
@@ -736,7 +782,7 @@ footer p {
     box-sizing: border-box;
     padding: 30px 20px;
   }
-
+/*etiketttstorlek "godkänn"*/
   .booking label {
     font-size: 1.5rem;
   }
