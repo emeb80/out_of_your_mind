@@ -68,7 +68,7 @@
             </section>
 
 
-            <!--bokningsformulär skall valideras med Javascript-->
+            <!--bokningsformulär valideras med Javascript och html-->
             <form class="booking">
                 <label for="room">Rum:</label>
                 <select name="room" id="room" required>
@@ -89,7 +89,7 @@
                     <option value="21:00">21:00</option>
                 </select>
                 <label for="persons">Antal:</label>
-                <select name="persons" id="persons">
+                <select name="persons" id="persons" required>
                     <option value="" selected disabled>Personer</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -107,7 +107,7 @@
                 <textarea name="message" id="message" rows="7" placeholder="Skriv ditt meddelande..."></textarea>
                 
                 <div class="terms">
-                    <input type="checkbox" id="terms" name="terms" required>
+                    <input type="checkbox" id="terms" name="terms">
                     <!--lägga till sida för att länka till bokningsvilkoren om det hinns med-->
                     <label class="terms-label" for="terms">
                         Jag godkänner bokningsvillkoren
@@ -128,7 +128,10 @@
         <p>outofyourmind@mail.com</p>
         <p>012-34 56 789</p>
     </footer>
-<script src="js/script.js"></script>
+    <!--länkar in javascipt för nav meny mobil och bokningsformulär-->
+    <script src="js/script.js"></script>
+<script src="js/booking.js"></script>
+
 </body>
 
 </html>
