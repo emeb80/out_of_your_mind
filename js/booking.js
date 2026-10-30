@@ -10,6 +10,11 @@ const bookingNumber = document.querySelector("#number");
 const bookingEmail = document.querySelector("#mail");
 //hämtar godkännande av vilkor
 const bookingTerms = document.querySelector("#terms");
+//Hämtar boningsvilkoren + knapp som visar vilkor
+const bookingTermsText = document.querySelector("#bookingterms");
+const termsToggle = document.querySelector(".terms-toggle");
+//Hämtar knapp för att stänga vilkoren
+const termsClose = document.querySelector(".terms-close");
 
 //Kontroll av form. när man klickar boka
 bookingForm.addEventListener("submit", function (event) {
@@ -80,4 +85,16 @@ bookingForm.addEventListener("submit", function (event) {
     successMessage.textContent = "Tack! Formuläret är korrekt ifyllt!";
     bookingForm.appendChild(successMessage);
   }
+});
+//Visar bokningsvillkoren när man klickar på knappen
+termsToggle.addEventListener("click", function () {
+  if (getComputedStyle(bookingTermsText).display === "none") {
+    bookingTermsText.style.display = "block";
+  } else {
+    bookingTermsText.style.display = "none";
+  }
+});
+//Stänger bokningsvilkoren vid klick på knapp "stäng"
+termsClose.addEventListener("click", function () {
+  bookingTermsText.style.display = "none";
 });

@@ -567,7 +567,13 @@ footer p {
   box-sizing: border-box;
   padding: 30px 20px;
 }
-
+.terms-close{
+  display: block;
+  background-color:#101214;
+  color: #e6dec7;
+  margin: 0 auto;
+  margin-top: 25px;
+}
 /*storlek på fält och selectboxar*/
 .booking label {
   font-size: 1rem;
