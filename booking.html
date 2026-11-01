@@ -32,12 +32,13 @@
     <main>
         <img class="door" src="images/door_big.jpg" alt="metalldörrar i närbild">
         <h1 class="bookingheading">BOKA RUM</h1>
+        <!--Vilkor för bokning som visas vid klick-->
         <div class="terms-form">
-            
+
 
             <section class="bookingterms" id="bookingterms">
 
-                <h2>Bokningsvilkor</h2>
+                <h2>Bokningsvillkor</h2>
                 <h3>Bekräftelse</h3>
                 <p>Bokning görs via vårt bokningsformulär på hemsidan. När du skickat in en bokningsförfrågan kontaktar
                     vi dig för att bekräfta tid och datum. Bokningen är giltig först när du fått en bokningsbekräftelse
@@ -64,8 +65,9 @@
                 <p>
                     De uppgifter du lämnar i samband med bokningen används för att hantera din förfrågan och kontakta
                     dig angående bokningen.
-                Genom att skicka in en bokningsförfrågan godkänner du att vi kontaktar dig för att hantera din bokning.</p>
-            <button class="terms-close" type="button">STÄNG</button>
+                    Genom att skicka in en bokningsförfrågan godkänner du att vi kontaktar dig för att hantera din
+                    bokning.</p>
+                <button class="terms-close" type="button">STÄNG</button>
             </section>
 
 
@@ -106,18 +108,18 @@
                 <input type="email" id="mail" name="mail">
                 <label class="message-label" for="message">Meddelande:</label>
                 <textarea name="message" id="message" rows="7" placeholder="Skriv ditt meddelande..."></textarea>
-                
+                <!--kruta för godkännande-->
                 <div class="terms">
                     <input type="checkbox" id="terms" name="terms">
                     <!--lägga till sida för att länka till bokningsvilkoren om det hinns med-->
                     <label class="terms-label" for="terms">
                         Jag godkänner bokningsvillkoren
                     </label>
-                    
+                    <!--knapp för att skicka bokning-->
                 </div>
-                <button class="terms-toggle" type="button">Läs bokningsvilkor ▼ </button>
+                <button class="terms-toggle" type="button">Läs bokningsvillkor ▼ </button>
                 <button class="alert" type="submit">BOKA</button>
-                
+
             </form>
         </div>
     </main>
@@ -131,7 +133,7 @@
     </footer>
     <!--länkar in javascipt för nav meny mobil och bokningsformulär-->
     <script src="js/script.js"></script>
-<script src="js/booking.js"></script>
+    <script src="js/booking.js"></script>
 
 </body>
 
