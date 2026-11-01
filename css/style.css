@@ -726,6 +726,7 @@ footer p {
   .room {
     display: flex;
     flex-direction: row;
+    align-items: center;
     max-width: 1200px;
     height: auto;
     min-height: 300px;
