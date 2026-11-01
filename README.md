@@ -39,3 +39,6 @@ Git och GitHub har använts för versionshantering.
 Bokningsformuläret kontrollerar att obligatoriska uppgifter är ifyllda, men skickar ingen faktisk bokning. Kontaktformuläret validerar uppgifterna men skickar inget meddelande.
 
 FAQ-funktionen för att visa och dölja svar är inte färdigställd. Ett planerat bildspel på sidan Våra rum har också utgått på grund av tidsbrist.
+
+## Länk till publicerad webbplats:
+https://outofyourmind.netlify.app/
