@@ -288,7 +288,6 @@ footer p {
   display: block;
   width: 100%;
   height: auto;
-  border: 3px solid blue;
 }
 .room p {
   font-family: "google sans code", monospace;
